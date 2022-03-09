@@ -71,8 +71,11 @@ function App() {
             onChange={() => toggleComplete(todo.id)}
             checked={todo.completed}
           />
-          <button onClick={() => setTodoEditing(todo.id)}>Edit</button>
-          <button onClick={() => editTodo(todo.id)}>Submit</button>
+          {todoEditing === todo.id ? (
+            <button onClick={() => editTodo(todo.id)}>Submit</button>
+          ) : (
+            <button onClick={() => setTodoEditing(todo.id)}>Edit</button>
+          )}
         </div>
       ))}
     </div>

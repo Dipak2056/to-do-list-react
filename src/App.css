@@ -1,7 +1,84 @@
 .App {
   text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
 }
-
+.element {
+  background: antiquewhite;
+  color: black;
+  width: 80%;
+  display: flex;
+  margin-top: 15px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid silver;
+  border-radius: 15px;
+  box-shadow: 0 0 5px 3px aqua;
+  font-size: 1.5rem;
+}
+.firstInput {
+  padding: 5px;
+  margin-right: 20px;
+  outline: none;
+  font-size: 28px;
+  border-radius: 5px;
+  border: none;
+  background: grey;
+  color: white;
+  box-shadow: 0 0 5px 3px white;
+}
+.addtodo {
+  color: black;
+  background: yellow;
+  border: none;
+  font-weight: bold;
+  font-family: oblique;
+  border-radius: 5px;
+  font-size: 28px;
+  box-shadow: 0 0 5px 5px #888888;
+}
+.input {
+  margin-right: 10px;
+  outline: 0;
+  border: 1px solid silver;
+  font-size: 16px;
+  padding: 2px;
+  border-radius: 5px;
+}
+.deleteButton {
+  background-color: tomato;
+  margin-left: 25px;
+  padding: 5px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.deleteButton::before {
+  content: "🧂";
+}
+.editButton,
+.submitButton {
+  background-color: rgb(19, 134, 96);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 20px;
+  padding: 2px;
+  color: whitesmoke;
+  width: 100px;
+}
+.editButton::before {
+  content: "✍🏻";
+}
+.submitButton::before {
+  content: "🗃️";
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

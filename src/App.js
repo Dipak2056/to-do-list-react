@@ -60,7 +60,7 @@ function App() {
         <div className="element" key={todo.id}>
           {todoEditing === todo.id ? (
             <input
-              placeholder="write new content here.."
+              placeholder="write new task here.."
               className="input"
               type="text"
               onChange={(e) => setEditingText(e.target.value)}
